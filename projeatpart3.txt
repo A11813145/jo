@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class available
+{
+char bookname[100];	
+public:
+	void getdata(){
+cout<<"name of the book:"<<endl;
+cin>>bookname;
+}
+void linear()
+{
+	char key[100]={'physics','chemistry','english','maths'};
+	for(int i=key[0];i<=key[3];i++)
+	if(bookname==key)
+	{
+		cout<<"book available"<<endl;
+			}
+	else
+	{
+		cout<<"not available"<<endl;
+	}
+}};
+int main()
+{
+	available k;
+	k.getdata();
+	k.linear();
+	return 0;
+}
